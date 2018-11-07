@@ -1,0 +1,56 @@
+#main-nav {
+  margin: 42px 0px;
+  background: none;
+  text-transform: uppercase;
+}
+#main-nav button {
+  background: none;
+  border: none;
+}
+#main-nav h1 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#main-nav div {
+  border: none;
+}
+
+#main-img div {
+  margin-bottom: 24px;
+}
+
+#main-vid h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0px;
+}
+
+#contact {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 42px 0px;
+}
+#contact h2 {
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+#contact li:hover {
+  transform: scale(1.2);
+}
+#contact li a {
+  color: black;
+  font-size: 20px;
+}
+
+#footer {
+  background: black;
+  color: white;
+}
+#footer h2 {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
