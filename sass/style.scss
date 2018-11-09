@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Playfair+Display:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i|Prata');
 
 
-$fon1: "Playfair display";
-$fon2: "Antic Didone";
+$fon1: "Prata";
+$fon2: "Playfair";
+$color1: #CEFFFF;
 
+.display{
+	display: none;
+}
 
 #main-nav{
 	margin: 42px 0px;
@@ -20,13 +24,17 @@ $fon2: "Antic Didone";
 		font-size: 32px;
 		font-weight: bold;
 		letter-spacing: 2px;
-		font-family: $fon2;
+		font-family: $fon1;
 	}
 	div{
 		border: none;
 	}
+	
+	ul{
+
 	li{
-		a{
+		
+        a{
 			font-family: $fon1;
 			transition: 0.4s;
 
@@ -35,57 +43,64 @@ $fon2: "Antic Didone";
 			}
 		}
 	}
+  }
 }
 
 
 #main-img{
 	margin: 128px 0px;
+    h2{
+      font-size: 64px;
+	  text-transform: uppercase;
+	  letter-spacing: 1px;
+	  margin: 24px 0px;
+	  font-family: $fon1;
+    }
 }
 
 
 #main-vid{
-	h2{
+	p{
 	  font-size: 64px;
-	  text-transform: uppercase;
 	  letter-spacing: 1px;
 	  margin: 24px 0px;
-	  font-family: $fon2;
+	  font-family: $fon1;
 	 }
 }
 
 
 
 #contact{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 42px 0px;
-	font-family: $fon2;
+	font-family: $fon1;
 
-	h2{
-		font-size: 64px;
-		padding-bottom: 20px;
+	p{
+		margin: 16px 0px;
+
+		a{
+			text-decoration: none;
+		}
 	}
-
-	
 
 	li{
 		&:hover{
 	   transform: scale(1.2);
 	  }
 		a{
-			color: black;
+			color: lighten(black, 20%);
 			font-size: 20px;
 		}
 	}
 }
 
 #footer{
-	background: black;
-	color: white;
+	background: none;
 
 	h2{
 		font-size: 16px;
 		text-decoration: none;
+		color: lighten(black, 30%);
 		
 	}
 }
