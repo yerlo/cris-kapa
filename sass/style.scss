@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Playfair+Display:400,400i');
+
+
+$fon1: "Playfair display";
+$fon2: "Antic Didone";
+
+
 #main-nav{
 	margin: 42px 0px;
 	background: none;
@@ -10,28 +17,39 @@
 	}
 
 	h1{
-		font-size: 20px;
+		font-size: 32px;
 		font-weight: bold;
 		letter-spacing: 2px;
+		font-family: $fon2;
 	}
 	div{
 		border: none;
 	}
-}
+	li{
+		a{
+			font-family: $fon1;
+			transition: 0.4s;
 
-#main-img{
-
-	div{
-		margin-bottom: 24px;
+			&:hover{
+				text-decoration: line-through;
+			}
+		}
 	}
 }
 
+
+#main-img{
+	margin: 128px 0px;
+}
+
+
 #main-vid{
 	h2{
-	  font-size: 48px;
+	  font-size: 64px;
 	  text-transform: uppercase;
 	  letter-spacing: 1px;
-	  margin: 20px 0px;
+	  margin: 24px 0px;
+	  font-family: $fon2;
 	 }
 }
 
@@ -41,9 +59,10 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 42px 0px;
+	font-family: $fon2;
 
 	h2{
-		font-size: 48px;
+		font-size: 64px;
 		padding-bottom: 20px;
 	}
 
