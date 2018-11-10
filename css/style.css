@@ -1,17 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arya");
+#brand {
+  margin-top: 56px;
+}
 #brand a {
   margin-bottom: 42px;
   background: none;
+  font-size: 56px;
   text-transform: uppercase;
   font-family: "Abril Fatface";
   text-decoration: none;
   letter-spacing: 2px;
   transition: 0.4s;
+  color: #4d4d4d;
 }
 
 #main-nav {
   margin-bottom: 32px;
   background: white;
+}
+#main-nav .selec {
+  text-decoration: line-through;
+  color: #404040;
 }
 #main-nav .container {
   display: flex;
@@ -25,7 +34,7 @@
   border: none;
 }
 #main-nav a {
-  font-family: "Playfair Display";
+  font-family: "Arya";
   transition: 0.5s;
   letter-spacing: 2px;
   font-size: 16px;
@@ -59,13 +68,15 @@
 }
 
 #contact {
-  letter-spacing: 1px;
   margin: 42px 0px;
-  font-family: "Playfair Display";
 }
 #contact p {
   margin: 16px 0px;
-  color: black;
+  color: #333333;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-family: "Arya";
+  font-size: 16px;
 }
 #contact p a {
   text-decoration: none;
@@ -85,10 +96,6 @@
   padding-top: 40px;
   font-size: 16px;
   color: #4d4d4d;
-}
-
-.selec {
-  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */

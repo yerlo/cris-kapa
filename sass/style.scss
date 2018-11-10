@@ -1,19 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arya');
 
 
 $fon1: "Abril Fatface";
-$fon2: "Playfair Display";
+$fon2: "Arya";
+
+
 
 
 #brand{
+	margin-top: 56px;
 	a{
 	margin-bottom: 42px;
 	background: none;
+	font-size: 56px;
 	text-transform: uppercase;
 	font-family: $fon1;
 	text-decoration: none;
 	letter-spacing: 2px;
 	transition: 0.4s;
+	color: lighten(black, 30%);
    }
 }
 
@@ -21,6 +26,11 @@ $fon2: "Playfair Display";
 	margin-bottom: 32px; 
 	background: white;
 
+
+    .selec{
+	  text-decoration: line-through;
+	  color: lighten(black, 25%);
+	}
 	
     .container{
     	display: flex;
@@ -72,13 +82,14 @@ $fon2: "Playfair Display";
 
 
 #contact{
-	letter-spacing: 1px;
 	margin: 42px 0px;
-	font-family: $fon2;
-
-	p{
+      p{
 		margin: 16px 0px;
-		color: black;
+		color: lighten(black, 20%);
+		font-weight: lighter;
+		letter-spacing: 1px;
+		font-family: $fon2;
+		font-size: 16px;
 
 		a{
 			text-decoration: none;
@@ -107,6 +118,5 @@ $fon2: "Playfair Display";
 	}
   
 }
-.selec{
-	text-decoration: line-through;
-}
+
+
