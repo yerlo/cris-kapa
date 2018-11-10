@@ -3,69 +3,55 @@
 
 $fon1: "Prata";
 $fon2: "Playfair";
-$color1: #CEFFFF;
 
-.display{
-	display: none;
+
+#brand{
+	a{
+	margin-bottom: 42px;
+	background: none;
+	text-transform: uppercase;
+	font-family: $fon1;
+	text-decoration: none;
+	letter-spacing: 1px;
+   }
 }
 
 #main-nav{
-	margin: 42px 0px;
-	background: none;
-	text-transform: uppercase;
-    
-
-	button{
+	margin-bottom:40px; 
+    .container{
+    	display: flex;
+    	justify-content: center;
+    	background: none;
+    }
+    button{
 		background: none;
 		border: none;
+
 	}
 
-	h1{
-		font-size: 32px;
-		font-weight: bold;
-		letter-spacing: 2px;
-		font-family: $fon1;
-	}
 	div{
 		border: none;
 	}
-	
-	ul{
-
-	li{
-		
-        a{
+	     a{
 			font-family: $fon1;
-			transition: 0.4s;
+			transition: 0.5s;
+			letter-spacing: 2px;
+			font-size: 16px;
+			text-transform: uppercase;
 
 			&:hover{
 				text-decoration: line-through;
 			}
 		}
-	}
-  }
 }
 
 
 #main-img{
 	margin: 128px 0px;
-    h2{
-      font-size: 64px;
-	  text-transform: uppercase;
-	  letter-spacing: 1px;
-	  margin: 24px 0px;
-	  font-family: $fon1;
-    }
 }
 
-
 #main-vid{
-	p{
-	  font-size: 64px;
-	  letter-spacing: 1px;
-	  margin: 24px 0px;
-	  font-family: $fon1;
-	 }
+	
 }
 
 
@@ -95,12 +81,13 @@ $color1: #CEFFFF;
 }
 
 #footer{
-	background: none;
+	box-sizing: border-box;
 
 	h2{
+        padding-top: 40px;
 		font-size: 16px;
-		text-decoration: none;
 		color: lighten(black, 30%);
-		
+	
 	}
+  
 }
