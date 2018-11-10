@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400i|Prata');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display');
 
 
-$fon1: "Prata";
-$fon2: "Playfair";
+$fon1: "Abril Fatface";
+$fon2: "Playfair Display";
 
 
 #brand{
@@ -35,7 +35,7 @@ $fon2: "Playfair";
 		border: none;
 	}
 	     a{
-			font-family: $fon1;
+			font-family: $fon2;
 			transition: 0.5s;
 			letter-spacing: 2px;
 			font-size: 16px;
@@ -74,7 +74,7 @@ $fon2: "Playfair";
 #contact{
 	letter-spacing: 1px;
 	margin: 42px 0px;
-	font-family: $fon1;
+	font-family: $fon2;
 
 	p{
 		margin: 16px 0px;

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i|Prata");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display");
 #brand a {
   margin-bottom: 42px;
   background: none;
   text-transform: uppercase;
-  font-family: "Prata";
+  font-family: "Abril Fatface";
   text-decoration: none;
   letter-spacing: 2px;
   transition: 0.4s;
@@ -25,7 +25,7 @@
   border: none;
 }
 #main-nav a {
-  font-family: "Prata";
+  font-family: "Playfair Display";
   transition: 0.5s;
   letter-spacing: 2px;
   font-size: 16px;
@@ -61,7 +61,7 @@
 #contact {
   letter-spacing: 1px;
   margin: 42px 0px;
-  font-family: "Prata";
+  font-family: "Playfair Display";
 }
 #contact p {
   margin: 16px 0px;
