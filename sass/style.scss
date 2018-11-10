@@ -12,21 +12,23 @@ $fon2: "Playfair";
 	text-transform: uppercase;
 	font-family: $fon1;
 	text-decoration: none;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
+	transition: 0.4s;
    }
 }
 
 #main-nav{
-	margin-bottom:40px; 
+	margin-bottom: 32px; 
+	background: white;
+
+	
     .container{
     	display: flex;
     	justify-content: center;
-    	background: none;
     }
     button{
 		background: none;
 		border: none;
-
 	}
 
 	div{
@@ -48,12 +50,11 @@ $fon2: "Playfair";
 
 #main-img{
 	margin: 128px 0px;
-}
 
-#main-vid{
-	
+	@media (max-width: 767px){
+	   margin: 0px;	
+	}
 }
-
 
 
 #contact{
@@ -63,6 +64,7 @@ $fon2: "Playfair";
 
 	p{
 		margin: 16px 0px;
+		color: black;
 
 		a{
 			text-decoration: none;
@@ -90,4 +92,7 @@ $fon2: "Playfair";
 	
 	}
   
+}
+.selec{
+	text-decoration: line-through;
 }

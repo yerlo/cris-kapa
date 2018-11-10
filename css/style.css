@@ -5,16 +5,17 @@
   text-transform: uppercase;
   font-family: "Prata";
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  transition: 0.4s;
 }
 
 #main-nav {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  background: white;
 }
 #main-nav .container {
   display: flex;
   justify-content: center;
-  background: none;
 }
 #main-nav button {
   background: none;
@@ -37,6 +38,11 @@
 #main-img {
   margin: 128px 0px;
 }
+@media (max-width: 767px) {
+  #main-img {
+    margin: 0px;
+  }
+}
 
 #contact {
   letter-spacing: 1px;
@@ -45,6 +51,7 @@
 }
 #contact p {
   margin: 16px 0px;
+  color: black;
 }
 #contact p a {
   text-decoration: none;
@@ -64,6 +71,10 @@
   padding-top: 40px;
   font-size: 16px;
   color: #4d4d4d;
+}
+
+.selec {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */
