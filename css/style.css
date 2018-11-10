@@ -38,6 +38,20 @@
 #main-img {
   margin: 128px 0px;
 }
+#main-img div {
+  margin-bottom: 24px;
+}
+#main-img div img {
+  transition: 0.4s;
+}
+#main-img div img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 766px) {
+  #main-img div img:hover {
+    transform: none;
+  }
+}
 @media (max-width: 767px) {
   #main-img {
     margin: 0px;

@@ -50,6 +50,20 @@ $fon2: "Playfair";
 
 #main-img{
 	margin: 128px 0px;
+	div{
+		margin-bottom: 24px;
+
+		img{
+			transition: 0.4s;
+			&:hover{
+				transform: scale(1.1);
+
+				@media (max-width: 766px){
+					transform: none;
+				}
+			}
+		}
+	}
 
 	@media (max-width: 767px){
 	   margin: 0px;	
