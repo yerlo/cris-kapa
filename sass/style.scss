@@ -18,11 +18,12 @@ $fon2: "Arya";
 	text-decoration: none;
 	letter-spacing: 2px;
 	transition: 0.4s;
-	color: lighten(black, 30%);
+	color: lighten(black, 25%);
+	
 	@media (max-width: 600px){
 		font-size: 42px;
 	}
-   }
+  }
    a.brand1{
    	color: lighten(black, 40%);
    }
