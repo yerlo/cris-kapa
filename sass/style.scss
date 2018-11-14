@@ -60,6 +60,24 @@ $fon2: "Arya";
 		}
 }
 
+/*#home-img{
+	.item{
+		transition-property: opacity;
+	}
+	.item, .active.left, .active.right{
+		opacity: 0;
+	} 
+
+	.active, .next.left, .prev.right{
+		opacity: 1;
+	}
+
+	.next, .prev, .active.left, .active.right{
+		left: 0;
+		transform: translate3d(0, 0, 0);
+	}
+}*/
+
 
 #main-img{
 	margin: 128px 0px;
@@ -113,16 +131,14 @@ $fon2: "Arya";
 	}
 }
 
-#footer{
-	box-sizing: border-box;
-
-	h2{
-        padding-top: 40px;
-		font-size: 16px;
-		color: lighten(black, 30%);
-	
-	}
-  
+ #footer{
+    box-sizing: border-box;
+     h2{
+      padding-top: 40px;
+	  font-size: 16px;
+	  color: lighten(black, 30%);
+    }
 }
+
 
 
