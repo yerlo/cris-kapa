@@ -43,12 +43,8 @@ $fon2: "Arya";
     	display: flex;
     	justify-content: center;
     }
-    button{
-		background: none;
-		border: none;
-	}
-
-	div{
+    
+      div{
 		border: none;
 	}
 	     a{
@@ -67,10 +63,13 @@ $fon2: "Arya";
 
 #main-img{
 	margin: 128px 0px;
-	div{
+
+    div{
 		margin-bottom: 24px;
 
 		img{
+			display: none;
+			
 			transition: 0.4s;
 			&:hover{
 				transform: scale(1.1);

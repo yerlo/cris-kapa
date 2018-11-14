@@ -44,7 +44,7 @@
     <div class="row">
 
    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    <img src="img/43.jpg" class="img-responsive">
+    <img src="img/43.jpg" id="img" class="img-responsive">
 
     <div class="row">
     
@@ -75,7 +75,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-      
+      $("document").ready(function(){
+       
+        var num = Math.floor((Math.random() * 44) + 1);
+        src="img/"+num+".jpg"
+
+        $("#img").attr("src",src)
+
+      })
     </script>
     
 
