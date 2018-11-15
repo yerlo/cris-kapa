@@ -5,8 +5,6 @@ $fon1: "Abril Fatface";
 $fon2: "Arya";
 
 
-
-
 #brand{
 	margin-top: 56px;
 	a{
@@ -60,8 +58,13 @@ $fon2: "Arya";
 		}
 }
 
-/*#home-img{
-	.item{
+#home-img{
+	div{
+		.items{
+			max-width: 640px;
+		}
+	}
+	/*.item{
 		transition-property: opacity;
 	}
 	.item, .active.left, .active.right{
@@ -75,12 +78,14 @@ $fon2: "Arya";
 	.next, .prev, .active.left, .active.right{
 		left: 0;
 		transform: translate3d(0, 0, 0);
-	}
-}*/
+	}*/
+}
+
+
 
 
 #main-img{
-	margin: 128px 0px;
+	margin: 24px 0px;
 
     div{
 		margin-bottom: 24px;
@@ -131,10 +136,10 @@ $fon2: "Arya";
 	}
 }
 
- #footer{
+ footer, #footer{
     box-sizing: border-box;
      h2{
-      padding-top: 40px;
+      padding-top: 16px;
 	  font-size: 16px;
 	  color: lighten(black, 30%);
     }
