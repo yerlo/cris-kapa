@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arya");
 #brand {
-  margin-top: 56px;
+  margin-top: 32px;
 }
 #brand a {
   margin-bottom: 42px;
@@ -69,9 +69,6 @@
   max-width: 640px;
 }
 
-#main-img {
-  margin: 24px 0px;
-}
 #main-img div {
   margin-bottom: 24px;
 }
