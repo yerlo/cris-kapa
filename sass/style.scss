@@ -59,35 +59,23 @@ $fon2: "Arya";
 }
 
 #home-img{
+
 	div{
 		.items{
 			max-width: 640px;
 		}
 	}
-	/*.item{
-		transition-property: opacity;
-	}
-	.item, .active.left, .active.right{
-		opacity: 0;
-	} 
-
-	.active, .next.left, .prev.right{
-		opacity: 1;
-	}
-
-	.next, .prev, .active.left, .active.right{
-		left: 0;
-		transform: translate3d(0, 0, 0);
-	}*/
 }
 
 #main-img{
-	
+	   
+	   .uno{
+	   	display: none;
+	   }
       div{
 		margin-bottom: 24px;
 
 		img{
-			display: none;
 			transition: 0.4s;
 			&:hover{
 				transform: scale(1.1);
@@ -132,7 +120,7 @@ $fon2: "Arya";
 	}
 }
 
- footer, #footer{
+ #footer{
     box-sizing: border-box;
 
      h2{

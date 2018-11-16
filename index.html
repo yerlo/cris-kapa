@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -51,7 +53,7 @@
        <div class="carousel-inner">
         <div class="active item"><img src="img/1.jpg" class="img-responsive img"></div>
         <div class="item"><img src="img/2.jpg" class="img-responsive img"></div> -->
-        <div class="item"><img src="img/2.jpg" class="img-responsive img"></div>
+        <div class="item"><img src="" class="img-responsive img"></div>
       <!-- </div>
       </div> -->
 
@@ -68,9 +70,6 @@
  </section>
 
 
-  
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
       
@@ -84,13 +83,17 @@
     <script type="text/javascript">
       $("document").ready(function(){
 
-         setInterval(function(){
-          var num = Math.floor((Math.random() * 28) + 1);
+          imagenes ()
 
-           src="img/"+num+".jpg"
-            $(".img").attr("src",src)
-             },2600);
+         setInterval(imagenes,2500);
         })
+
+          function imagenes(){
+           var num = Math.floor((Math.random() * 28) + 1);
+
+            src="img/"+num+".jpg"
+             $(".img").attr("src",src)
+            }
     </script>
     
   </body>
