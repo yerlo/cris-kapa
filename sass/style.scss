@@ -6,17 +6,14 @@ $fon2: "Arya";
 
 
 #brand{
-	margin-top: 32px;
+	margin-top: 24px;
 
 	a{
-	margin-bottom: 42px;
-	background: none;
 	font-size: 64px;
 	text-transform: uppercase;
 	font-family: $fon1;
 	text-decoration: none;
 	letter-spacing: 2px;
-	transition: 0.4s;
 	color: lighten(black, 25%);
 	
 	@media (max-width: 600px){
@@ -45,26 +42,19 @@ $fon2: "Arya";
       div{
 		border: none;
 	}
-	     a{
+	    li{
+	    	padding: 0px 8px;
+	      a{
 			font-family: $fon2;
 			transition: 0.5s;
 			letter-spacing: 2px;
 			font-size: 16px;
 			text-transform: uppercase;
-
-			&:hover{
-				text-decoration: line-through;
-			}
-		}
-}
-
-#home-img{
-
-	div{
-		.items{
-			max-width: 640px;
-		}
-	}
+               &:hover{
+				 text-decoration: line-through;
+			    }
+		    }
+	    }
 }
 
 #main-img{
@@ -94,10 +84,12 @@ $fon2: "Arya";
 
 
 #contact{
-	margin: 42px 0px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 
       p{
-		margin: 40px 0px;
+		margin-top: 40px;
+	    margin-bottom: 40px;
 		color: lighten(black, 20%);
 		font-weight: lighter;
 		letter-spacing: 1px;
@@ -120,7 +112,7 @@ $fon2: "Arya";
 	}
 }
 
- #footer{
+ footer{
     box-sizing: border-box;
 
      h2{
