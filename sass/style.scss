@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arya');
 
-
 $fon1: "Abril Fatface";
 $fon2: "Arya";
-
 
 #brand{
 	margin-top: 24px;
@@ -20,7 +18,7 @@ $fon2: "Arya";
 		font-size: 42px;
 	}
   }
-   .brand1{
+   .brand-selec{
    	color: lighten(black, 40%);
    }
 }
@@ -57,39 +55,35 @@ $fon2: "Arya";
 	    }
 }
 
-#main-img{
-	   
-	   .uno{
-	   	display: none;
-	   }
-      div{
+#galeria{
+	  
+      figure{
 		margin-bottom: 24px;
+		 @media (max-width: 988px){
+		 	margin-bottom: 16px;
+		 }
+		
 
 		img{
-			transition: 0.4s;
+		  transition: 0.4s;
 			&:hover{
-				transform: scale(1.1);
-
-				@media (max-width: 766px){
-					transform: none;
+			  transform: scale(1.1);
+                @media (max-width: 766px){
+				  transform: scale(1.02);
 				}
 			}
 		}
-	}
-
-	@media (max-width: 767px){
-	   margin: 0px;	
 	}
 }
 
 
 #contact{
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 
       p{
-		margin-top: 40px;
-	    margin-bottom: 40px;
+		padding-top: 80px;
+		padding-bottom: 16px;
 		color: lighten(black, 20%);
 		font-weight: lighter;
 		letter-spacing: 1px;
@@ -97,7 +91,7 @@ $fon2: "Arya";
 		font-size: 16px;
 
 		a{
-			text-decoration: none;
+		 text-decoration: none;
 		}
 	}
 
