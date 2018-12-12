@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arya');
-$fon1: "Abril Fatface";
-$fon2: "Arya";
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT|Oswald');
+$fon1: "Oswald";
+$fon2: "Old Standart TT";
+$fon3: "Inconsolata";
 
 #brand{
 	margin-top: 24px;
     a{
-	font-size: 64px;
+	font-size: 56px;
 	text-transform: uppercase;
 	font-family: $fon1;
 	text-decoration: none;
 	letter-spacing: 2px;
-	color: lighten(black, 25%);
+	color: black;
+	font-weight: bold;
 	
 	@media (max-width: 600px){
 		font-size: 42px;
 	}
   }
-   .brand-selec{
-   	color: lighten(black, 40%);
-   }
+  
 }
 
 #main-nav{
 	margin-bottom: 32px; 
-	background: white;
+	background: transparent;
 
     .selec{
 	  text-decoration: line-through;
@@ -34,18 +34,14 @@ $fon2: "Arya";
     	display: flex;
     	justify-content: center;
     }
-    
-      div{
-		border: none;
-	}
 	    li{
-	    	padding: 0px 8px;
+	    	
 	      a{
 			font-family: $fon2;
 			transition: 0.5s;
 			letter-spacing: 2px;
-			font-size: 16px;
-			text-transform: uppercase;
+			font-size: 12px;
+			text-transform: lowercase;
                &:hover{
 				 text-decoration: line-through;
 			    }
@@ -53,38 +49,29 @@ $fon2: "Arya";
 	    }
 }
 
+#home-img{
+	img{
+		max-height: 800px;
+	}
+}
+
 #galeria{
 	  
       figure{
-		margin-bottom: 24px;
-		 @media (max-width: 988px){
-		 	margin-bottom: 16px;
-		 }
-		
-
-		img{
-		  transition: 0.4s;
-			&:hover{
-			  transform: scale(1.1);
-                @media (max-width: 766px){
-				  transform: scale(1.02);
-				}
-			}
-		}
+		margin-bottom: 8px;
 	}
+	
 }
 #contact{
 	margin-top: 40px;
-	margin-bottom: 20px;
+	margin-bottom: 80px;
 
       p{
 		padding-top: 80px;
 		padding-bottom: 16px;
 		color: lighten(black, 20%);
-		font-weight: lighter;
-		letter-spacing: 1px;
-		font-family: $fon2;
-		font-size: 16px;
+		font-family: $fon3;
+		font-size: 14px;
 
 		a{
 		 text-decoration: none;
@@ -103,11 +90,8 @@ $fon2: "Arya";
 }
 
  footer{
-    box-sizing: border-box;
-
      h2{
-      padding-top: 16px;
-	  font-size: 16px;
+	  font-size: 12px;
 	  color: lighten(black, 30%);
     }
 }

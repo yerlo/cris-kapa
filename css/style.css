@@ -1,27 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arya");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT|Oswald");
 #brand {
   margin-top: 24px;
 }
 #brand a {
-  font-size: 64px;
+  font-size: 56px;
   text-transform: uppercase;
-  font-family: "Abril Fatface";
+  font-family: "Oswald";
   text-decoration: none;
   letter-spacing: 2px;
-  color: #404040;
+  color: black;
+  font-weight: bold;
 }
 @media (max-width: 600px) {
   #brand a {
     font-size: 42px;
   }
 }
-#brand .brand-selec {
-  color: #666666;
-}
 
 #main-nav {
   margin-bottom: 32px;
-  background: white;
+  background: transparent;
 }
 #main-nav .selec {
   text-decoration: line-through;
@@ -31,55 +29,35 @@
   display: flex;
   justify-content: center;
 }
-#main-nav div {
-  border: none;
-}
-#main-nav li {
-  padding: 0px 8px;
-}
 #main-nav li a {
-  font-family: "Arya";
+  font-family: "Old Standart TT";
   transition: 0.5s;
   letter-spacing: 2px;
-  font-size: 16px;
-  text-transform: uppercase;
+  font-size: 12px;
+  text-transform: lowercase;
 }
 #main-nav li a:hover {
   text-decoration: line-through;
 }
 
+#home-img img {
+  max-height: 800px;
+}
+
 #galeria figure {
-  margin-bottom: 24px;
-}
-@media (max-width: 988px) {
-  #galeria figure {
-    margin-bottom: 16px;
-  }
-}
-#galeria figure img {
-  transition: 0.4s;
-}
-#galeria figure img:hover {
-  transform: scale(1.1);
-}
-@media (max-width: 766px) {
-  #galeria figure img:hover {
-    transform: scale(1.02);
-  }
+  margin-bottom: 8px;
 }
 
 #contact {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 #contact p {
   padding-top: 80px;
   padding-bottom: 16px;
   color: #333333;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  font-family: "Arya";
-  font-size: 16px;
+  font-family: "Inconsolata";
+  font-size: 14px;
 }
 #contact p a {
   text-decoration: none;
@@ -92,12 +70,8 @@
   font-size: 20px;
 }
 
-footer {
-  box-sizing: border-box;
-}
 footer h2 {
-  padding-top: 16px;
-  font-size: 16px;
+  font-size: 12px;
   color: #4d4d4d;
 }
 
