@@ -1,4 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT|Oswald:400,700");
+@keyframes blur {
+  0% {
+    text-shadow: 1px 0px 1px grey;
+  }
+  20% {
+    text-shadow: 0px 0px 2px grey;
+  }
+  30% {
+    text-shadow: -1px 0px 3px grey;
+  }
+  40% {
+    text-shadow: 0px 0px 2px grey;
+  }
+  50% {
+    text-shadow: 1px 0px 1px grey;
+  }
+  60% {
+    text-shadow: 0px 0px 2px grey;
+  }
+  70% {
+    text-shadow: -1px 0px 3px grey;
+  }
+  80% {
+    text-shadow: 0px 0px 2px grey;
+  }
+  90% {
+    text-shadow: 1px 0px 1px grey;
+  }
+  100% {
+    text-shadow: 0px 0px 2px grey;
+  }
+}
 #brand {
   margin-top: 24px;
 }
@@ -6,10 +38,13 @@
   font-size: 56px;
   text-transform: uppercase;
   font-family: "Oswald";
+  font-weight: 700;
   text-decoration: none;
   letter-spacing: 2px;
   color: black;
-  font-weight: bold;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-direction: both;
 }
 @media (max-width: 600px) {
   #brand a {
@@ -34,18 +69,50 @@
   transition: 0.5s;
   letter-spacing: 2px;
   font-size: 12px;
-  text-transform: lowercase;
 }
 #main-nav li a:hover {
   text-decoration: line-through;
 }
 
 #home-img img {
-  max-height: 800px;
+  max-height: 600px;
 }
 
 #galeria figure {
   margin-bottom: 8px;
+}
+
+#main-vid section figure {
+  border: none;
+}
+#main-vid section figure img {
+  cursor: pointer;
+}
+#main-vid section figure figcaption {
+  font-family: italic;
+  font-size: 12px;
+}
+#main-vid section figure figcaption h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Inconsolata";
+  font-weight: bold;
+}
+#main-vid section figure figcaption h3 {
+  font-size: 14px;
+  font-family: "Inconsolata";
+  font-weight: bold;
+  display: inline-block;
+}
+#main-vid section figure figcaption h4 {
+  font-size: 14px;
+  font-family: "Inconsolata";
+  font-weight: bold;
+  display: inline-block;
+}
+
+.modal-header {
+  border: none;
 }
 
 #contact {

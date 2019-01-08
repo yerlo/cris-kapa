@@ -30,9 +30,9 @@
     <div class="container">
          
        <ul class="nav navbar-nav list-inline text-center">
-        <li><a href="kapa/photography.html">Photography</a></li>
-        <li><a href="kapa/videos.html">Film&Video</a></li>
-        <li><a href="kapa/contact.html">Contact</a></li>
+        <li><a href="kapa/photography.html">photography</a></li>
+        <li><a href="kapa/videos.html">film&video</a></li>
+        <li><a href="kapa/contact.html">contact</a></li>
        </ul>
       </div>
 
@@ -42,7 +42,7 @@
   <main class="container" id="home-img">
    <section class="row">
   
-    <figure class="item col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-12 col-md-offset-0">
+    <figure class="item col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-12">
      <img src="" class="img-responsive img center-block" alt="Cristian kapa Photography">
     </figure>
       
@@ -69,6 +69,10 @@
 
     <script type="text/javascript">
       $("document").ready(function(){
+
+        $("img").on("contextmenu",function(){
+       return false;
+    }); 
 
           imagenes ()
 

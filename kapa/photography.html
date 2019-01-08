@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Cristian Kapa</title>
     <link rel="shortcut icon" type="image/ico" href="../img/icono.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
@@ -12,7 +13,7 @@
 </head>
  <body>
     
-  <header class="container">
+  <header class="container-fluid">
 
     <main class="row" id="brand">
      <h1 class="col-xs-12 text-center">
@@ -24,9 +25,9 @@
     <div class="container">
        
       <ul class="nav navbar-nav list-inline text-center">
-       <li><a class="selec" href="photography.html">Photography</a></li>
-       <li><a href="videos.html">Film&Video</a></li>
-       <li><a href="contact.html">Contact</a></li>
+       <li><a class="selec" href="photography.html">photography</a></li>
+       <li><a href="videos.html">film&video</a></li>
+       <li><a href="contact.html">contact</a></li>
       </ul>
      </div>
 
@@ -115,6 +116,12 @@
          infobar: false,
          toolbar: false,
         });
+      $(document).ready(function() {
+       $("img").on("contextmenu",function(){
+       return false;
+       }); 
+      }); 
+
     </script>
   </body>
 </html>
