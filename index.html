@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="title" content="Cristian Kapa">
     <meta name="description" content="Cristian Kapa is an Atlantian-Colombian portrait photographer, film director, cinematographer, and colorist residing in Buenos Aires.">
     <meta name="keywords" content="photography, portrait , film, colorist">
@@ -12,6 +12,7 @@
     <meta name="language" content="English">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="Cristian Kapa">
+    <meta name="theme-color" content="##D6D6D6">
     <title>Cristian Kapa</title>
     <link rel="shortcut icon" type="image/ico" href="img/icono.ico">
     <link rel="stylesheet" href="css/_bstyle.min.css">
@@ -19,75 +20,58 @@
 </head>
  <body>
    <header class="container">
-
-    <main class="row" id="brand">
-     <h1 class="col-xs-12 text-center">
-      <a href="index.html">Cristian Kapa</a>
+    <main class="row text-center" id="brand">
+     <h1 class="col">
+      <a href="http://www.cristiankapa.com/">Cristian <strong>Kapa</strong></a>
      </h1>
     </main>
-       
-   <nav class=" row nav navbar-default" id="main-nav">
-    <div class="container">
-         
-       <ul class="nav navbar-nav list-inline text-center">
-        <li><a href="kapa/photography.html">photography</a></li>
-        <li><a href="kapa/videos.html">film&video</a></li>
-        <li><a href="kapa/contact.html">contact</a></li>
-       </ul>
-      </div>
-
-   </nav>
   </header>
+
+   <nav class="container" id="main-nav">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="kapa/photography.html">photography</a></li>
+      <li class="nav-item"><a class="nav-link" href="kapa/videos.html">film&video</a></li>
+      <li class="nav-item"><a class="nav-link" href="kapa/contact.html">contact</a></li>
+    </ul>
+   </nav>
  
   <main class="container" id="home-img">
    <section class="row">
-  
-    <figure class="item col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-offset-0 col-md-12">
-     <img src="" class="img-responsive img center-block" alt="Cristian kapa Photography">
+    <figure class="col">
+     <img src="" class="img-fluid img mx-auto d-block" alt="Cristian kapa Photography">
     </figure>
-      
   </section>
  </main>
 
 <footer class="container">
- <div class="row">
-  <h2 class="col-xs-12 text-center" id="footer">© Cristian Kapa</h2>
+ <div class="row text-center">
+  <h2 class="col">© Cristian <strong>Kapa</strong></h2>
  </div>
 </footer>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130115686-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-130115686-1');
     </script>
-
     <script src="js/jquery-3.3.1.min.js"></script>
-
     <script type="text/javascript">
       $("document").ready(function(){
-
-        $("img").on("contextmenu",function(){
-       return false;
-    }); 
-
-          imagenes ()
-
-         setInterval(imagenes,5000);
-        })
-
-          function imagenes(){
-           var num = Math.floor((Math.random() * 15) + 1);
-
-            src="img/"+num+".jpg"
-             $(".img").attr("src",src)
-            }
-    </script>
-    
-  </body>
+       $("img").on("contextmenu",function(){
+        return false;
+      }); 
+       imagenes ()
+        setInterval(imagenes,5000);
+       })
+        function imagenes(){
+         var num = Math.floor((Math.random() * 15) + 1);
+          src="img/"+num+".jpg"
+           $(".img").attr("src",src)
+        }
+     </script>
+    </body>
 </html>
 
 

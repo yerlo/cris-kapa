@@ -1,132 +1,107 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT|Oswald:400,700");
-@keyframes blur {
-  0% {
-    text-shadow: 1px 0px 1px grey;
-  }
-  20% {
-    text-shadow: 0px 0px 2px grey;
-  }
-  30% {
-    text-shadow: -1px 0px 3px grey;
-  }
-  40% {
-    text-shadow: 0px 0px 2px grey;
-  }
-  50% {
-    text-shadow: 1px 0px 1px grey;
-  }
-  60% {
-    text-shadow: 0px 0px 2px grey;
-  }
-  70% {
-    text-shadow: -1px 0px 3px grey;
-  }
-  80% {
-    text-shadow: 0px 0px 2px grey;
-  }
-  90% {
-    text-shadow: 1px 0px 1px grey;
-  }
-  100% {
-    text-shadow: 0px 0px 2px grey;
+html {
+  font-size: 0.8rem;
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 1rem;
   }
 }
+@media (min-width: 1140px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
 #brand {
-  margin-top: 24px;
+  margin-top: 2.5rem;
 }
 #brand a {
-  font-size: 56px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-family: "Oswald";
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 2px;
   color: black;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  animation-direction: both;
 }
-@media (max-width: 600px) {
+@media (max-width: 337px) {
   #brand a {
-    font-size: 42px;
+    font-size: 2rem;
   }
 }
 
 #main-nav {
-  margin-bottom: 32px;
-  background: transparent;
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
 }
 #main-nav .selec {
   text-decoration: line-through;
-  color: #404040;
-}
-#main-nav .container {
-  display: flex;
-  justify-content: center;
+  color: #333333;
 }
 #main-nav li a {
+  color: gray;
   font-family: "Old Standart TT";
   transition: 0.5s;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 #main-nav li a:hover {
   text-decoration: line-through;
+  color: #4d4d4d;
 }
 
 #home-img img {
   max-height: 600px;
 }
 
-#galeria figure {
-  margin-bottom: 8px;
-}
-
 #main-vid section figure {
-  border: none;
+  margin-bottom: 3rem;
 }
 #main-vid section figure img {
   cursor: pointer;
 }
 #main-vid section figure figcaption {
-  font-family: italic;
-  font-size: 12px;
+  color: black;
+  font-style: italic;
+  font-size: 0.6rem;
 }
 #main-vid section figure figcaption h2 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Inconsolata";
-  font-weight: bold;
+  font-style: normal;
 }
-#main-vid section figure figcaption h3 {
-  font-size: 14px;
+#main-vid section figure figcaption h2 strong {
+  font-weight: normal;
+}
+#main-vid section figure figcaption h2.nnstyle {
+  text-transform: none;
+}
+#main-vid section figure figcaption h3, #main-vid section figure figcaption h4 {
+  font-size: 0.6rem;
   font-family: "Inconsolata";
-  font-weight: bold;
+  font-style: normal;
   display: inline-block;
-}
-#main-vid section figure figcaption h4 {
-  font-size: 14px;
-  font-family: "Inconsolata";
-  font-weight: bold;
-  display: inline-block;
-}
-
-.modal-header {
-  border: none;
 }
 
 #contact {
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
-#contact p {
-  padding-top: 80px;
-  padding-bottom: 16px;
+  margin-top: 4.3rem;
+  margin-bottom: 3rem;
   color: #333333;
   font-family: "Inconsolata";
   font-size: 14px;
 }
-#contact p a {
+#contact h2 {
+  color: #333333;
+  font-family: "Inconsolata";
+  font-size: 14px;
+  display: inline;
+}
+#contact h2 strong {
+  font-weight: normal;
+}
+#contact a {
   text-decoration: none;
 }
 #contact li:hover {
@@ -134,12 +109,26 @@
 }
 #contact li a {
   color: #333333;
-  font-size: 20px;
+  font-size: 1rem;
+}
+@media (max-width: 540px) {
+  #contact li a {
+    font-size: 1.2rem;
+  }
 }
 
 footer h2 {
-  font-size: 12px;
-  color: #4d4d4d;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  color: black;
+}
+@media (max-width: 540px) {
+  footer h2 {
+    font-size: 1.1rem;
+  }
+}
+footer h2 strong {
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=style.css.map */

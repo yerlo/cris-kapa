@@ -3,166 +3,132 @@ $fon1: "Oswald";
 $fon2: "Old Standart TT";
 $fon3: "Inconsolata";
 
-@keyframes blur{
-	0%{
-		text-shadow: 1px 0px 1px grey;
-	}
-	20%{
-		text-shadow: 0px 0px 2px grey;
-	}
-	30%{
-		text-shadow: -1px 0px 3px grey;
-	}
-	40%{
-		text-shadow: 0px 0px 2px grey;
-	}
-	50%{
-		text-shadow: 1px 0px 1px grey;
-	}
-	60%{
-		text-shadow: 0px 0px 2px grey;
-	}
-	70%{
-		text-shadow: -1px 0px 3px grey;
-	}
-	80%{
-		text-shadow: 0px 0px 2px grey;
-	}
-	90%{
-		text-shadow: 1px 0px 1px grey;
-	}
-	100%{
-		text-shadow: 0px 0px 2px grey;
-	}
+html {
+ font-size: 0.8rem;
+  @media (min-width: 540px){
+   font-size: 1rem;
+  }
+  @media (min-width: 1140px){
+   font-size: 1.1rem;
+  }
 }
 #brand{
-	margin-top: 24px;
+	margin-top: 2.5rem;
     a{
-	font-size: 56px;
+	font-size: 3.5rem;
 	text-transform: uppercase;
 	font-family: $fon1;
 	font-weight: 700;
 	text-decoration: none;
 	letter-spacing: 2px;
 	color: black;
-	
-	animation-iteration-count: infinite;
-	animation-duration: 20s;
-	animation-direction: both;
-	@media (max-width: 600px){
-		font-size: 42px;
-	}
+	@media (max-width: 337px){
+  	font-size: 2rem;
+    }
   }
-  
 }
 #main-nav{
-	margin-bottom: 32px; 
-	background: transparent;
-
-    .selec{
-	  text-decoration: line-through;
-	  color: lighten(black, 25%);
+ margin-top: 0.7rem;
+ margin-bottom: 2rem; 
+  .selec{
+   text-decoration: line-through;
+   color: lighten(black, 20%);
+   }
+   li{
+	 a{
+	  color: lighten(black, 50%);
+	  font-family: $fon2;
+	  transition: 0.5s;
+	  letter-spacing: 2px;
+	  font-size: 0.8rem;
+       &:hover{
+	    text-decoration: line-through;
+		color: lighten(black, 30%);
+		}
+	  }
 	}
-	
-    .container{
-    	display: flex;
-    	justify-content: center;
-    }
-	    li{
-	    	
-	      a{
-			font-family: $fon2;
-			transition: 0.5s;
-			letter-spacing: 2px;
-			font-size: 12px;
-               &:hover{
-				 text-decoration: line-through;
-			    }
-		    }
-	    }
 }
 #home-img{
-	img{
-		max-height: 600px;
+ img{
+  max-height: 600px;
 	}
-}
-#galeria{
-      figure{
-		margin-bottom: 8px;
-	}
-	
 }
 
 #main-vid{
-	section{
-		figure{
-			border: none;
-			img{
-					cursor: pointer;
-				}
-			figcaption{
-				    font-family: italic;
-					font-size: 12px;
-				h2{
-					text-transform: uppercase;
-					font-size: 18px;
-					font-family: $fon3;
-					font-weight: bold;
-					
-				}
-				
-					h3{
-					 font-size: 14px;
-					 font-family: $fon3;
-					 font-weight: bold;
-					 display: inline-block;
+ section{
+  figure{
+   margin-bottom: 3rem;
+	 img{
+	  cursor: pointer;
+		}
+	   figcaption{
+		color: black;
+		font-style: italic;
+		font-size: 0.6rem;
+         h2{
+		  text-transform: uppercase;
+		  font-size: 1rem;
+		  font-family: $fon3;
+		  font-style: normal;
+		  strong{
+		  	font-weight: normal;
+		  }
+		   &.nnstyle{
+			text-transform: none;
 					}
-					h4{
-					 font-size: 14px;
-					 font-family: $fon3;
-					 font-weight: bold;
-					 display: inline-block;
-					}
+			}
+			h3, h4{
+			 font-size: 0.6rem;
+			 font-family: $fon3;
+			 font-style: normal;
+			 display: inline-block;
+			  }
 			}
 		}
 	}
 }
-
-.modal-header{
-       border: none;
-}
-
-
 #contact{
-	margin-top: 40px;
-	margin-bottom: 80px;
-
-      p{
-		padding-top: 80px;
-		padding-bottom: 16px;
-		color: lighten(black, 20%);
-		font-family: $fon3;
-		font-size: 14px;
-
-		a{
-		 text-decoration: none;
-		}
-	}
-
-	li{
-		&:hover{
-	   transform: scale(1.2);
-	  }
-		a{
-			color: lighten(black, 20%);
-			font-size: 20px;
-		}
-	}
+ margin-top: 4.3rem;
+ margin-bottom: 3rem;
+ color: lighten(black, 20%);
+ font-family: $fon3;
+ font-size: 14px;
+ h2{
+ color: lighten(black, 20%);
+ font-family: $fon3;
+ font-size: 14px;
+ display: inline;
+ strong{
+ font-weight: normal;
+    }
+   }
+ a{
+  text-decoration: none;
+  }
+ li{
+  &:hover{
+   transform: scale(1.2);
+	 }
+  a{
+  color: lighten(black, 20%);
+  font-size: 1rem;
+  @media (max-width: 540px){
+  	font-size: 1.2rem;
+    }
+   }
+  }
 }
 
- footer{
-     h2{
-	  font-size: 12px;
-	  color: lighten(black, 30%);
+footer{
+ h2{
+ font-weight: lighter;	
+ font-size: 0.8rem;
+ color: black;
+ @media (max-width: 540px){
+  	font-size: 1.1rem;
+  }
+  strong{
+  font-weight: lighter;
+	    }
     }
 }
